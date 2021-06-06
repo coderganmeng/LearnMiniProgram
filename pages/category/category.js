@@ -1,13 +1,17 @@
-// miniprogram/pages/about/about.js
+// pages/category/category.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    message:'呵呵呵呵'
   },
-
+  handleBtnClick(){
+    this.setData({
+      message:'嘿嘿嘿'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
