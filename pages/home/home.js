@@ -5,7 +5,69 @@ Page({
    * 页面的初始数据
    */
   data: {
+    title:['衣服','裤子','鞋子']
+  },
+  handleBtnClick(){
+    console.log('按钮发生点击');
+  },
 
+  handleTouchStart(){
+    console.log('触摸开始手势');
+  },
+  handleTouchMove(){
+    console.log('触摸移动手势');
+  },
+  handleTouchEnd(){
+    console.log('触摸结束手势');
+  },
+  handleTap(){
+    console.log('轻点手势');
+  },
+  handleLongpress(){
+    console.log('长按手势');
+  },
+
+  handleEventClick(event){
+    console.log('---------',event);
+  },
+
+  handleEventEnd(event){
+    console.log('+++++++++',event);
+  },
+
+  handleInner(event){
+    console.log(event);
+  },
+  handleOuter(event){
+    console.log(event);
+  },
+
+  handleItemClick(event){
+    console.log(event);
+    const item=event.currentTarget.dataset.item
+    const index=event.currentTarget.dataset.index
+    console.log(item,index);
+  },
+
+  //事件冒泡和事件捕获
+  handleCaptrueView1(){
+    console.log('handleCaptrueView1');
+  },
+  handleCaptrueView2(){
+    console.log('handleCaptrueView2');
+  },
+  handleCaptrueView3(){
+    console.log('handleCaptrueView3');
+  },
+
+  handleBindView1(){
+    console.log('handleBindView1');
+  },
+  handleBindView2(){
+    console.log('handleBindView2');
+  },
+  handleBindView3(){
+    console.log('handleBindView3');
   },
 
   /**
